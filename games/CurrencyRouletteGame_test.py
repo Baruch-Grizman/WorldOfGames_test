@@ -8,7 +8,7 @@ from time import sleep
 import random
 from currency_converter import CurrencyConverter
 from Live_test import *
-from Score_test import Score
+from data.Score_test import Score
 
 
 class CurrencyRouletteGame:
