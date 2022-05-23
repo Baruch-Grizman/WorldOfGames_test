@@ -13,7 +13,7 @@ Methods
 
 
 from Live_test import *
-from Utils_test import Utils
+from data.Utils_test import Utils
 
 
 class Score:

@@ -2,7 +2,7 @@
 this program is for getting inputs for WorldOfGames, includes name, game, difficulty
 """
 
-from Utils_test import Utils
+from data.Utils_test import Utils
 
 
 class Live:
