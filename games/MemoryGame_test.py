@@ -1,7 +1,12 @@
 """
-The purpose of memory game is to display an amount of random numbers to the users for 0.7
-seconds and then prompt them from the user for the numbers that he remember. If he was right
-with all the numbers the user will win otherwise he will lose.
+The object of the game is to display a quantity (the quantity is based on the difficulty level,
+selected in the initial stage) of random numbers in the range from 1 to 101, for 1.5 seconds.
+The user will then be prompted to enter the numbers based on the memory.
+At the end both the numbers displayed and the numbers guessed will be displayed.
+If the user was right and remembered all the numbers,
+it will be printed that he succeeded and in addition the score will be added to the score file
+If the user made a mistake and did not remember all the numbers,
+it will be printed that he failed and better luck next time
 """
 
 from time import sleep

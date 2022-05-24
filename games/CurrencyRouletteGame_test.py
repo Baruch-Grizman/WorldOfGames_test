@@ -1,8 +1,12 @@
 """
-This game will use the free currency api to get the current exchange rate from USD to ILS, will
-generate a new random number between 1-100 and will ask the user what he thinks is the value of
-the generated number from USD to ILS, depending on the user’s difficulty his answer will be
-correct if the guessed value is between the interval surrounding the correct answer
+This game uses the free CurrencyConverter api, to get the conversion rate between USD and ILS.
+The object of the game is to show the user a random number in the range 1 to 100,
+and ask him to write down how much he thinks the value displayed from USD to ILS.
+Depending on the difficulty level selected, the correct value will be within an interval range around the correct result.
+If the user correctly guessed the value of USD to ILS,
+it will be printed that he succeeded and in addition the score will be added to the score file.
+If the user does not guess the value of USD to ILS correctly,
+it will be printed that he failed and better luck next time.
 """
 from time import sleep
 import random

@@ -1,5 +1,7 @@
 """
-this program is for getting inputs for WorldOfGames, includes name, game, difficulty
+This program is for getting inputs for WorldOfGames, includes name, game, difficulty.
+After selecting the difficulty level, each level is multiplied by 3 times the selected value,
+in order to give higher weight to the difficulty level
 """
 
 from data.Utils_test import Utils

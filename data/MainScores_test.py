@@ -1,6 +1,7 @@
 """
-This file’s sole purpose is to serve the user’s score currently in the scores.txt file over HTTP with
-HTML. This will be done by using python’s flask library.
+This file is responsible for reading the score file and publishing it to HTTP using HTML,
+this process will be done using Python FLASK library.
+In the event of an error in reading the score file, the error code we defined will be displayed.
 """
 
 from flask import Flask, render_template

@@ -1,6 +1,11 @@
 """
-The purpose of guess game is to start a new game, cast a random number between 1 to a
-variable called difficulty . The game will get a number input from the
+The object of the game, is to ask the user to guess a number in the range of 1 and the difficulty level chosen accordingly.
+Then, a comparison is made between the random number of the computer and the number entered by the user.
+Both the random number and the guessed number will appear on the screen.
+If the user correctly guessed the number,
+it will be printed that he succeeded and in addition the score will be added to the score file.
+If the user does not guess the number correctly,
+it will be printed that he failed and better luck next time.
 """
 
 from time import sleep
