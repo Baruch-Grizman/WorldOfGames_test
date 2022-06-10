@@ -6,8 +6,11 @@ In the event of an error in reading the score file, the error code we defined wi
 
 from flask import Flask, render_template
 from data.Utils_test import Utils
+import os
 
-app = Flask('MainScores')
+template_dir = os.path.abspath('../templates')
+
+app = Flask('MainScores', template_folder=template_dir)
 
 
 @app.route('/')

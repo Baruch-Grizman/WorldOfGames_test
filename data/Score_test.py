@@ -23,15 +23,15 @@ class Score:
 
         try:
             # try to open file, if not exist it will create a new one
-            with open(Utils.SCORES_FILE_NAME, encoding='utf-8') as score_file:
+            with open(Utils.SCORES_FILE, encoding='utf-8') as score_file:
                 for line in score_file.readlines():     # reading current score from file
                     points_of_winning += int(line)      # adding new points of winning to current score
-            with open(Utils.SCORES_FILE_NAME, 'w+', encoding='utf-8') as score_file:
+            with open(Utils.SCORES_FILE, 'w+', encoding='utf-8') as score_file:
                 score_file.write(f'{points_of_winning}')    # writing the new sum score to file
 
         except:
             # if no score.txt file exist, creating new one
-            with open('Scores.txt', 'w+', encoding='utf-8') as score_file:
+            with open(Utils.SCORES_FILE, 'w+', encoding='utf-8') as score_file:
                 score_file.write(f'{points_of_winning}')    # writing the new score to file
 
 

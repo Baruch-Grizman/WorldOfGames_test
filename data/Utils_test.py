@@ -13,12 +13,17 @@ import os
 class Utils:
 
     def __init__(self):
-        self.SCORES_FILE_NAME = 'Scores.txt'
+        self.SCORES_FOLDER = os.path.abspath('./data')  # save folder path
+        self.SCORES_FILE_NAME = 'Scores.txt'    # file name
+        self.SCORES_FILE = os.path.join(self.SCORES_FOLDER, self.SCORES_FILE_NAME)  # join folder and file name
         self.BAD_RETURN_CODE = "-1: Score file is unreachable"
 
+    # Function to clear the screen when starting a new game
     def screen_cleaner(self):
         return os.system('cls' if os.name == 'nt' else 'clear')
 
+    # Function that checks whether the inserted characters are only numbers,
+    # and whether they are in the correct range, depending on the requirement in the various files.
     def input_check(self, high_range):
         while True:
             try:
