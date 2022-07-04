@@ -1,0 +1,7 @@
+services:
+  wog:
+    image: baruchgr/wog_test
+    container_name: wog_test
+    build: .
+    ports:
+      - "8777:5000"
