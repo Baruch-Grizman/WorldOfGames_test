@@ -8,7 +8,7 @@ import os
 
 
 def test_scores_service(url):
-    webdriver_dir = os.path.abspath('../tests/chromedriver.exe')
+    webdriver_dir = os.path.abspath('../tests/chromedriver.exe')    # ver 103
     chrome_driver = webdriver.Chrome(executable_path=webdriver_dir)
     chrome_driver.get(url)
     score_read = chrome_driver.find_element(By.ID, 'score').text
