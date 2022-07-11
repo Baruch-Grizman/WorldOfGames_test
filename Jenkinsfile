@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat "docker run -it -p 8777:5000 baruchgr/wog_test sh"
+                bat "docker run -it -p 8777:5000 baruchgr/wog_test"
                 bat "python3 ./data/MainScores_test.py"
 
             }
