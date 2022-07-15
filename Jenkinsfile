@@ -13,9 +13,8 @@ pipeline {
         }
         stage('Run') {
             steps {
-//                 bat "docker rm -f baruchgr/wog_test"
-//                 bat "docker run --rm -d -p 8777:5000 --name wogtest baruchgr/wog_test"
                 bat "docker run --rm -d -p 8777:5000 wog_test"
+                bat "pip install flask"
                 bat "python ./data/MainScores_test.py"
 
             }
